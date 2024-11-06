@@ -1,0 +1,34 @@
+{
+    "variables": {
+        "travelersCount": { // больше 1 и меньше 15
+            "value": {{Input1.text}}, 
+            "type": "Integer"
+        },
+        "insPlan": { // продукт
+            "value": "{{Select1.selectedOptionValue}}",
+            "type": "String"
+        },
+        "travelDuration": { // продолжительность тура
+            "value": {{Input1Copy.text}},
+            "type": "Integer"
+        },
+        "sport": { // типы спортивных активностей
+            "value": "{{Select1Copy.selectedOptionValue}}",
+            "type": "String"
+        },
+        "сountries": { // посещаемые страны
+            "value": {{"[" + MultiSelect1.selectedOptionValues.map(value => `"${value}"`).toString() + "]"}},
+            "type": "Json"
+        },
+        "temperature": { // город вылета
+            "value": {{Input1Copy1.text}},
+            "type": "Integer"
+        },
+        "user_id": { // Id страхователя
+            "value": {{Input1Copy1Copy.text}},
+            "type": "Integer"
+        }
+    },
+    "withVariablesInReturn": true,
+    "businessKey": "7e9e9871-7dc1-11ef-9eb7-00155dd27222"
+}

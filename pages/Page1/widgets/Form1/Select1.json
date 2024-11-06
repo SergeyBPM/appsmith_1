@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "jkvjacpwjp",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Продукт",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 22,
+  "originalTopRow": 15,
+  "parentColumnSpace": 12.0703125,
+  "parentId": "utr01s0thw",
+  "parentRowSpace": 10,
+  "placeholderText": "Не выбран",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Стандарт\",\n    \"code\": \"standart\"\n  },\n  {\n    \"name\": \"Расширенный\",\n    \"code\": \"extended\"\n  },\n  {\n    \"name\": \"Премиум\",\n    \"code\": \"premium\"\n  }\n]",
+  "topRow": 12,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ynazv5b2zs",
+  "widgetName": "Select1"
+}

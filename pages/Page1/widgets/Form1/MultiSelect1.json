@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 40,
+  "boxShadow": "none",
+  "defaultOptionValue": "[\n  \"АВСТРИЯ\",\n  \"АФГАНИСТАН\"\n]",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "qw6zm9rz13",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Посещаемые страны",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 36,
+  "originalTopRow": 29,
+  "parentColumnSpace": 12.0703125,
+  "parentId": "utr01s0thw",
+  "parentRowSpace": 10,
+  "placeholderText": "Не выбраны",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "serverSideFiltering": false,
+  "sourceData": "{{ \n  get_countries.data\n    .split(\"\\n\")\n    .map(line => line.trim())\n    .filter(line => line.length > 0)\n    .map(line => JSON.parse(line))\n    .map(c => ({ name: c.country_name, code: c.country_id }))\n}}\n",
+  "topRow": 33,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "wom7wv6nwa",
+  "widgetName": "MultiSelect1"
+}

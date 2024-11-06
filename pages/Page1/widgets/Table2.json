@@ -1,0 +1,212 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 91,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": true,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "amountValue",
+    "queryResultValue",
+    "_id"
+  ],
+  "columnUpdatedAt": 1730732873165,
+  "columnWidthMap": {},
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.amountValue.computedValue"
+    },
+    {
+      "key": "primaryColumns.queryResultValue.computedValue"
+    },
+    {
+      "key": "primaryColumns._id.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "horizontalAlignment": "LEFT",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": false,
+  "key": "mlcooj3xz5",
+  "label": "Data",
+  "leftColumn": 35,
+  "minWidth": 450,
+  "mobileBottomRow": 120,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 92,
+  "needsErrorInfo": false,
+  "originalBottomRow": 91,
+  "originalTopRow": 42,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "_id": {
+      "alias": "_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "_id",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Номер котировки",
+      "notation": "standard",
+      "originalId": "_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "amountValue": {
+      "alias": "amountValue",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amountValue\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "amountValue",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Сумма",
+      "notation": "standard",
+      "originalId": "amountValue",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "queryResultValue": {
+      "alias": "queryResultValue",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"queryResultValue\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "queryResultValue",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Имя",
+      "notation": "standard",
+      "originalId": "queryResultValue",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchKey": "",
+  "tableData": "{{Mongo_q.data}}",
+  "textSize": "0.875rem",
+  "topRow": 42,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "18pcp1hvya",
+  "widgetName": "Table2"
+}

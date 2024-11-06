@@ -1,0 +1,2 @@
+INSERT INTO vehicle (make, model, year, licenseplate, price) VALUES
+(null, null, null, '{{input_GRZ.text}}', null);
